@@ -1,0 +1,195 @@
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+.hero {
+  height: 100vh;
+  padding: 2rem;
+  background-image: url("../images/bazaar-17.png");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  animation: 2s containerIn;
+}
+
+.logo-hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-hero-container {
+  height: 100%;
+}
+
+.logo-hero img {
+  width: 442px;
+  height: 316px;
+  animation: 1s slideInUp;
+  animation-name: slideInUp;
+}
+.mouse {
+  width: 20px;
+  height: 38px;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #fff;
+  position: absolute;
+  z-index: 1;
+  animation: 3s slideInUp;
+  animation-name: slideInUp;
+}
+
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 5px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-hero img {
+    width: 302px;
+    height: 186px;
+  }
+}
+
+.BF13 img, .FontanaResidence img, .MariaBaptista img, .onemore img {
+  width: 223px;
+  height: 150px;
+}
+
+.FontanaResidence{
+  padding-bottom: 10px;
+}
+
+.BF13, .FontanaResidence, .MariaBaptista{
+  transition: all .3s;
+  padding-top: 10px;
+}
+.BF13:hover, .FontanaResidence:hover, .MariaBaptista:hover  {
+  border-radius: 15px;
+  box-sizing: border-box;
+  min-height: 50px;
+  background-color:#373737;
+  box-shadow: 0px 4px 20px #000000;
+  transform: scaleY(1.01);
+  transform: scaleX(1.01);
+}
+.search {
+  background-color: #1F1F1F;
+  height: 100%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.content {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+
+}
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 836px) {
+.MariaBaptista{
+  display: none;
+}
+}
+@media screen and (max-width: 640px) {
+.BF13, .FontanaResidence{
+  padding-bottom: 20px;
+}
+}
+@media screen and (max-width: 600px) {
+  .BF13 img, .FontanaResidence img {
+    width: 203px;
+    height: 130px;
+  }
+}
+
+.linktovisa p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+button {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  padding: 5px;
+  width: 80.48px;
+  height: 34.4px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-top: 1rem;
+  transition: all .3s;
+}
+button:hover{
+  color: black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color:whitesmoke;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+button:hover a{
+  color: black;
+}
+button a{
+  color: white;
+    text-decoration: none;
+}
+
+
+
+.card{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+.card .content{
+  background-color: #e8e8e8;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.faqs-link{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}

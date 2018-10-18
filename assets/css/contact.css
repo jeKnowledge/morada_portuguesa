@@ -1,0 +1,161 @@
+.bg-contacts{
+  background-image: url("../images/pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #EAEAEA;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.form h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 0;
+}
+
+.contact, .send_mail{
+  margin-top: 40px;
+}
+.contact{
+  text-align: left;
+}
+.contact p{
+  padding-bottom: 50px;
+}
+.contact h4{
+  margin-bottom: 0;
+}
+@media screen and (max-width: 640px) {
+  .contact{
+    margin-left: 30px;
+  }
+  .contact p{
+    padding-bottom: 0px;
+  }
+}
+.contact h4, .send_mail h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 16px;
+}
+
+.contact p, .send_mail label {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+  text-align: left;
+}
+
+label {
+  font-family: lato-light;
+  font-size: 13px;
+  color: #848484;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1145px) {
+  label {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  label {
+    margin-left:10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  label {
+    margin-left:80px;
+  }
+}
+@media screen and (max-width: 901px) {
+  label {
+    margin-left:60px;
+  }
+}
+@media screen and (max-width: 801px) {
+  label {
+    margin-left:40px;
+  }
+}
+@media screen and (max-width: 701px) {
+  label {
+    margin-left:30px;
+  }
+}
+input:focus, textarea:focus {
+  background: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  outline: none;
+}
+
+input, textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+  margin: 0;
+  width: 240px;
+  height: 20px;
+  background: none;
+  border-bottom: 1px solid #646464;
+}
+#message textarea{
+  padding: 10px;
+  width: 240px;
+  height: 100px;
+  resize: none;
+  overflow: auto;
+}
+
+
+button {
+  font-family: 'Oswald', sans-serif;
+  background-color: black;
+  padding: 5px;
+  width: 80.48px;
+  height: 34.4px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  float: left;
+  margin-left: 50px;
+  transition: all .3s;
+}
+button:hover{
+  color: black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color:whitesmoke;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1145px) {
+button {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  button {
+    margin-left:10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  button {
+    margin-left:80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  button {
+    margin-left:30px;
+  }
+}

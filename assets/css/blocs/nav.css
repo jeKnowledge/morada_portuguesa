@@ -1,0 +1,155 @@
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+}
+.wrapper {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 100vw;
+  top: 0;
+  background: black;
+  z-index: 10;
+  transition: left 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 96px;
+}
+
+@keyframes containerIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav.active {
+  left: 0;
+}
+
+nav a{
+  color: #95989A;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  width: 100%;
+  min-width: 50%;
+  margin: 8px;
+  text-decoration: none;
+}
+
+nav a span {
+  font-weight: 200;
+}
+
+nav img {
+  margin-left: 160px;
+  width: 190px;
+  position: absolute;
+  opacity: 0.7;
+  transition: transform 0.8s;
+}
+
+nav a:hover{
+  color: white;
+}
+a:hover img{
+  opacity: 1;
+}
+
+.nav-button {
+  right: 42px;
+  top: 42px;
+  width: 32px;
+  user-select: all;
+  pointer-events: all;
+  z-index: 100;
+  position: fixed;
+  animation: 2s containerIn;
+  cursor: pointer;
+}
+.nav-button .nav-button-line {
+  width: 100%;
+  height: 3px;
+  background: black;
+  margin-top: 4px;
+  transition: all 1s;
+
+}
+.nav-button.active .nav-button-line {
+  background: white;
+}
+.nav-button.active .nav-button-line:first-child {
+  transform: rotate(45deg) translateY(10px);
+}
+.nav-button.active .nav-button-line:nth-child(2) {
+  opacity: 0;
+}
+.nav-button.active .nav-button-line:last-child {
+  transform: rotate(-45deg) translateY(-10px);
+}
+
+
+@media screen and (max-width: 992px) {
+  nav a {
+    font-size: 37px;
+  }
+  nav{
+    padding-left: 70px;
+  }
+  nav img {
+    margin-left: 160px;
+    width: 140px;
+    position: absolute;
+    opacity: 0.7;
+    transition: transform 0.8s;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  nav a {
+    font-size: 26px;
+  }
+  nav{
+    padding-left: 20px;
+  }
+  nav img {
+    margin-left: 100px;
+    width: 120px;
+    position: absolute;
+    opacity: 0.7;
+    transition: transform 0.8s;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav a {
+    font-size: 23px;
+  }
+  nav{
+    padding-left: 20px;
+  }
+  nav img {
+    margin-left: 100px;
+    width: 100px;
+    position: absolute;
+    opacity: 0.7;
+    transition: transform 0.8s;
+  }
+}
