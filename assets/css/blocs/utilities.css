@@ -86,6 +86,9 @@
 .m-left-large {
   margin-left: 32px;
 }
+.m-left-larger {
+  margin-left: 48px;
+}
 
 .p-small {
   padding: 16px;

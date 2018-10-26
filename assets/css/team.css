@@ -81,15 +81,44 @@ h2 {
   font-weight: 300;
   font-size: 15px;
 }
-.team-pics {
-  display: flex;
-  flex-direction: row;
+.bla {
   flex-wrap: wrap;
 }
-.Humberto {
+.Humberto,
+.Guilherme,
+.Joana,
+.Higor,
+.Duarte {
   display: flex;
   flex-direction: row;
 }
-.team-pics .text {
-  font-size: 12px;
+.Humbertopic,
+.JoanaPic,
+.DuartePic,
+.HigorPic,
+.GuilhermePic {
+  width: 30%;
+  height: 100%;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 640px) {
+  .Humberto p,
+  .Guilherme p,
+  .Joana p,
+  .Higor p,
+  .Duarte p {
+    font-size: 12px;
+  }
+  .bla {
+    flex-direction: column;
+  }
+  .Humbertopic,
+  .JoanaPic,
+  .DuartePic,
+  .HigorPic,
+  .GuilhermePic {
+    width: 40%;
+    margin-bottom: 10px;
+  }
 }
